@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>project js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width ,initial scale =1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="row" id="GALLERY">
+        <div class="col-12">
+            <ul>
+                <li><a href="#" onclick="show_all();" id="all_agllery"> ALL GALLERY</a> </li>
+                <li> <a href="#" onclick="show_fitness()" id="fitness">FITNESS</a> </li>
+                <li><a href="#" onclick="show_coiching()" id="coiching">COACHING</a> </li>
+                <li> <a href="#" onclick="show_event()" id="event">EVENT</a></li>
+                <li> <a href="#" onclick="show_others()" id="other">OTHER</a> </li>
+            </ul>
+
+        </div>
+        <div class="row" style="margin-left: 5%; margin-right: 5%;">
+            <div class="col-6 gallery" id="img1">
+                <img src="gallery/gallery-1.jpg" class="responsive">
+            </div>
+            <div class="col-6 gallery" style="padding:5px;">
+                <div class="row">
+                    <div class="col-6 gallery" id="img2">
+                        <img src="gallery/gallery-2.jpg" class="responsive">
+                    </div>
+                    <div class="col-6 gallery">
+
+                        <div class="row">
+                            <div class="col-12 " id="img3">
+                                <img src="gallery/gallery-3.jpg" class="responsive">
+
+                            </div>
+                            <div class="col-12" id="img4">
+                                <img src="gallery/gallery-4.jpg" class="responsive">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row" style="margin-left: 5%; margin-right: 5%;">
+            <div class="col-6 gallery">
+                <div class="row">
+                    <div class="col-6 gallery" id="img5">
+                        <img src="gallery/gallery-5.jpg" class="responsive">
+                    </div>
+                    <div class="col-6 gallery" id="img6">
+                        <img src="gallery/gallery-6.jpg" class="responsive">
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-6 gallery" id="img7">
+                <img src="gallery/gallery-7.jpg" class="responsive">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="mapouter" >
+                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.emojilib.com"></a></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 500px;
+                        width: 100%;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 500px;
+                        width: 100%;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 5%;margin-right: 5%;">
+            <div class="col-4" id="contact_info">
+                <h1>CONTACT US</h1>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="iconcontainer">
+                                <i class="fal fa-map-marker-alt">
+
+                                </i>
+                            </span>
+
+                        </div>
+                        <div class="col-8">
+                            <div class="textcontainer">
+                                <h5 class="contact_h5" >Our Location</h5>
+                                <p class="contact_p">60-49 Road 11378 New York</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="iconcontainer">
+                                <i class="fal fa-map-marker-alt">
+
+                                </i>
+                            </span>
+
+                        </div>
+                        <div class="col-8">
+                            <div class="textcontainer">
+                                <h5 class="contact_h5">Phone:</h5>
+                                
+                                <p class="contact_p">+65 11.188.888</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="iconcontainer">
+                                <i class="fal fa-map-marker-alt">
+
+                                </i>
+                            </span>
+
+                        </div>
+                        <div class="col-8">
+                            <div class="textcontainer">
+                                <h5 class="contact_h5">Mail</h5>
+                               
+                                <p class="contact_p">hellocolorlib@ gmail.com</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="col-8" id="contact-message">
+                <h1>LEAVE A COMMENT</h1>
+                <div class="row">
+                    <form method="GET" action="#">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" required placeholder="Your name" id="contact_name">
+
+                            </div>
+                            <div class="col-6">
+                                <input type="email" required placeholder="Your Email" id="contact_email">
+
+                            </div>
+                            <div class="col-12">
+                                <textarea placeholder="Your messages" id="contact_textarea"></textarea>
+                                <button type="submit" id="submit_button">Send Message</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
